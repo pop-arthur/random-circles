@@ -29,7 +29,7 @@ class Example(QWidget):
             self.qp.end()
 
     def draw(self):
-        self.qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        self.qp.setBrush(QColor(250, 255, 0))
         x, y = randint(0, SCREEN_SIZE[0]), randint(0, SCREEN_SIZE[1])
         r = randint(0, 100)
         self.qp.drawEllipse(x, y, r, r)
